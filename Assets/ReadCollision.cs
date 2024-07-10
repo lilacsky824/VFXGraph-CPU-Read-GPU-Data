@@ -66,7 +66,6 @@ public class ReadCollision : MonoBehaviour
         uint count = _readback.GetData<uint>()[0];
         if (count > 0)
         {
-            Debug.Log(count);
             var data = _readback.GetData<float>();
             // Since the first element stores the count, we start at index 1 to read the first collision data entry
             int cursor = 1;
